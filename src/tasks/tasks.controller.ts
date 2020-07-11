@@ -6,7 +6,7 @@ import { Task } from './task.model';
 export class TasksController {
   constructor(private taskService: TasksService) {}
 
-  @Get('tasks')
+  @Get()
   getAllTasks(): Task[] {
     return this.taskService.getAllTasks();
   }
